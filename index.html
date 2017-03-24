@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- google font -->
+        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet' type='text/css'>
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href='pomodoro.css'>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <!-- javascript -->
+        <script src='pomodoro.js'></script>
+    </head>
+    <body>
+        <!-- modal -->
+        <!-- removeBreakMins -->
+        <div class="popup" data-popup="popup-1">
+            <div class="popup-inner">
+                <h2>nice try ;)</h2>
+                <h2>i suggest that you take at least a 5 minute break</h2>
+                <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+            </div>
+        </div>
+
+        <!-- removeTimerMins -->
+        <div class="popup" data-popup="popup-2">
+            <div class="popup-inner">
+                <h2>nice try ;)</h2>
+                <h2>the pomodoro way suggests 25 minute work blocks, i try 40-45 minute blocks, some people sit for hours on end... it's really up to you</h2>
+                <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+            </div>
+        </div>
+
+        <!-- timer end -->
+        <div class="popup" data-popup="popup-3">
+            <div class="popup-inner">
+                <h2>boom</h2>
+                <h2>time for a break, get up and walk around, drink some water, maybe get a snack, and back at it</h2>
+                <a class="popup-close" data-popup-close="popup-3" href="#">x</a>
+            </div>
+        </div>
+
+        <!-- break end -->
+        <div class="popup" data-popup="popup-4">
+            <div class="popup-inner">
+                <h2>boom</h2>
+                <h2>break is over, back to work</h2>
+                <a class="popup-close" data-popup-close="popup-4" href="#">x</a>
+            </div>
+        </div>
+
+        <!-- body stuff -->
+        <h1>"pomodoro clock" aka a timer</h1>
+        <div id="breakFrame">
+          <h2>break</h2><h2><span id="removeBreakMins">-</span><span id="breakMins">5</span><span id="addBreakMins">+</span></h2>
+        </div>
+        <div id="timeFrame">
+          <h2>timer</h2><h2><span id="removeTimerMins">-</span><span id="timerMins">25</span><span id="addTimerMins">+</span></h2>
+        </div>
+        <div id="mainFrame"><h1 id="timeLeft">25<br>(click me)</h1></div>
+    </body>
+</html>
